@@ -179,6 +179,7 @@ public class AstrologyModule : MonoBehaviour
             Debug.LogFormat("[Astrology #{0}] You pressed {1} Omen at {2}.", moduleId, button == NoButton ? "No" : button == PoorButton ? "Poor" : "Good", timerText);
             if (complete)
             {
+                Debug.LogFormat("[Astrology #{0}] Module solved.", moduleId);
                 BombModule.HandlePass();
                 isComplete = true;
             }
@@ -190,17 +191,4 @@ public class AstrologyModule : MonoBehaviour
 
         return false;
     }
-
-    /*void Update()
-	{
-		if (Input.GetKeyDown ("1")) {
-			HandlePress (PoorButton);
-		}
-		if (Input.GetKeyDown ("2")) {
-			HandlePress (NoButton);
-		}
-		if (Input.GetKeyDown ("3")) {
-			HandlePress (GoodButton);
-		}
-	}*/
 }
