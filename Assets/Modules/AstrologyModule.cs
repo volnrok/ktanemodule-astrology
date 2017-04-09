@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -190,5 +192,63 @@ public class AstrologyModule : MonoBehaviour
         }
 
         return false;
+    }
+
+    Dictionary<string, KMSelectable> _twitchCommands = null;
+    IEnumerator ProcessTwitchCommand(string command)
+    {
+        if (!command.StartsWith("press "))
+            yield break;
+        command = command.Substring(6).ToLowerInvariant();
+
+        if (_twitchCommands == null)
+            _twitchCommands = new Dictionary<string, KMSelectable>
+            {
+                { "good", ButtonGO },
+                { "good on", ButtonGO },
+                { "goodomen", ButtonGO },
+                { "good omen", ButtonGO },
+                { "goodomenon", ButtonGO },
+                { "good omen on", ButtonGO },
+                { "bad", ButtonPO },
+                { "bad on", ButtonPO },
+                { "badomen", ButtonPO },
+                { "bad omen", ButtonPO },
+                { "badomenon", ButtonPO },
+                { "bad omen on", ButtonPO },
+                { "poor", ButtonPO },
+                { "poor on", ButtonPO },
+                { "pooromen", ButtonPO },
+                { "poor omen", ButtonPO },
+                { "pooromenon", ButtonPO },
+                { "poor omen on", ButtonPO },
+                { "no", ButtonNO },
+                { "no on", ButtonNO },
+                { "noomen", ButtonNO },
+                { "no omen", ButtonNO },
+                { "noomenon", ButtonNO },
+                { "no omen on", ButtonNO },
+            };
+
+        KMSelectable btn;
+        if (_twitchCommands.TryGetValue(command.Trim().ToLowerInvariant(), out btn))
+        {
+            yield return btn;
+            yield return new WaitForSeconds(.1f);
+            yield return btn;
+            yield break;
+        }
+
+        var m = Regex.Match(command, @"^(.*)(\d)\s*$");
+        if (m.Success && _twitchCommands.TryGetValue(m.Groups[1].Value.Trim().ToLowerInvariant(), out btn))
+        {
+            while (!BombInfo.GetFormattedTime().Contains(m.Groups[2].Value))
+                yield return new WaitForSeconds(.1f);
+
+            yield return btn;
+            yield return new WaitForSeconds(.1f);
+            yield return btn;
+            yield break;
+        }
     }
 }
