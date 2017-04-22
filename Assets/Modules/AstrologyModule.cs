@@ -16,6 +16,7 @@ public class AstrologyModule : MonoBehaviour
     public Material[] Elements;
     public Material[] Planets;
     public Material[] Zodiacs;
+    public Material Zilch;
 
     public MeshRenderer Symbol1;
     public MeshRenderer Symbol2;
@@ -90,6 +91,12 @@ public class AstrologyModule : MonoBehaviour
 
     protected void Start()
     {
+        // In Unity, we assigned all possible symbol materials to the game objects because otherwise they do not show up on Mac.
+        // Here we reduce the number of materials back to one.
+        Symbol1.materials = new[] { Zilch };
+        Symbol2.materials = new[] { Zilch };
+        Symbol3.materials = new[] { Zilch };
+
         moduleId = moduleIdCounter++;
         GetComponent<KMBombModule>().OnActivate += OnActivate;
         ButtonPO.OnInteract += delegate () { HandlePress(PoorButton); return false; };
