@@ -43,7 +43,7 @@ GameObject:
   - 4: {fileID: 472864}
   - 33: {fileID: 3367968}
   - 23: {fileID: 2365056}
-  - 114: {fileID: 114000011535268728}
+  - 114: {fileID: 114000010785522262}
   m_Layer: 0
   m_Name: Symbol3
   m_TagString: Untagged
@@ -79,7 +79,7 @@ GameObject:
   - 4: {fileID: 491964}
   - 33: {fileID: 3354766}
   - 23: {fileID: 2359390}
-  - 114: {fileID: 114000013402078698}
+  - 114: {fileID: 114000012885784410}
   m_Layer: 0
   m_Name: Symbol1
   m_TagString: Untagged
@@ -96,9 +96,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 448818}
   - 33: {fileID: 3312002}
-  - 65: {fileID: 6504218}
   - 23: {fileID: 2383018}
-  - 114: {fileID: 114000010576590616}
+  - 114: {fileID: 114000014217036578}
   m_Layer: 0
   m_Name: TerminalScreen
   m_TagString: Untagged
@@ -198,7 +197,7 @@ GameObject:
   - 4: {fileID: 473198}
   - 33: {fileID: 3375802}
   - 23: {fileID: 2343252}
-  - 114: {fileID: 114000012025642760}
+  - 114: {fileID: 114000011238792936}
   m_Layer: 0
   m_Name: PuzzleBackground
   m_TagString: Untagged
@@ -401,7 +400,7 @@ GameObject:
   - 4: {fileID: 467636}
   - 33: {fileID: 3339702}
   - 23: {fileID: 2350004}
-  - 114: {fileID: 114000010325269660}
+  - 114: {fileID: 114000010231241450}
   m_Layer: 0
   m_Name: Symbol2
   m_TagString: Untagged
@@ -933,7 +932,16 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 96d2a053e59ab46498d5dec5b3e6fd9a, type: 2}
+  - {fileID: 2100000, guid: e428ec2f39a81af46bdab6e72940838b, type: 2}
+  - {fileID: 2100000, guid: a00a9b9db1602cf498ce1394fabedbef, type: 2}
+  - {fileID: 2100000, guid: 04dbba47dece8604098ec3efb05c5b42, type: 2}
+  - {fileID: 2100000, guid: d2af3cb1a8d6f1f4ca5657984cd6b9e4, type: 2}
+  - {fileID: 2100000, guid: a0a396bbc4e511548916c094b62c5821, type: 2}
+  - {fileID: 2100000, guid: 213b4a05830b8ef4890a51166246a6fa, type: 2}
+  - {fileID: 2100000, guid: c2bf83b1e574cda46a973db1e15eaf4e, type: 2}
+  - {fileID: 2100000, guid: 76b69e190a1c394498ca7cefb937c3af, type: 2}
+  - {fileID: 2100000, guid: 87a62aa97c9073e4ca0176d2bceb68b1, type: 2}
+  - {fileID: 2100000, guid: 919f9410eb030654bb2c5b497782f2ff, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -991,6 +999,10 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
+  - {fileID: 2100000, guid: 872ce6e13d807b94385c9fddeb3daeba, type: 2}
+  - {fileID: 2100000, guid: 2dad3d30347106d4884acb04704e4016, type: 2}
+  - {fileID: 2100000, guid: 807d00c79e4fbe946849c1e3c8d74464, type: 2}
+  - {fileID: 2100000, guid: 631050ed8bd8ad246bbf30ba478ffb8c, type: 2}
   - {fileID: 2100000, guid: 96d2a053e59ab46498d5dec5b3e6fd9a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
@@ -1049,7 +1061,18 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 96d2a053e59ab46498d5dec5b3e6fd9a, type: 2}
+  - {fileID: 2100000, guid: 521f0aba687930340a76e1e378294e79, type: 2}
+  - {fileID: 2100000, guid: 14a843ff1b7f4d6428bf17177662ffb8, type: 2}
+  - {fileID: 2100000, guid: a752a791c3a007c45a122dbe53ed1a64, type: 2}
+  - {fileID: 2100000, guid: 0d3a6828937d55147b1f4a9726321450, type: 2}
+  - {fileID: 2100000, guid: 0997762541a41844faf22b8c4fa16880, type: 2}
+  - {fileID: 2100000, guid: 8911bed86f43b5f47b4e4949cb1adac2, type: 2}
+  - {fileID: 2100000, guid: be4b8ae30e58f6e4399591461a1495fd, type: 2}
+  - {fileID: 2100000, guid: 1d063907afb183848abd3b80aaf1d50c, type: 2}
+  - {fileID: 2100000, guid: a6a01f40d45eca945a824b5a641cff9f, type: 2}
+  - {fileID: 2100000, guid: 852281a97a3695e479cd41989dfbe4b4, type: 2}
+  - {fileID: 2100000, guid: aa757d5551d13e64f8eddaf419098634, type: 2}
+  - {fileID: 2100000, guid: 7fc739afb226cd6468d71fa1fdd6343b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -1178,18 +1201,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125710}
   m_Mesh: {fileID: 4300000, guid: 5ab6c3be308beaa47b558e81d501cf7c, type: 3}
---- !u!65 &6504218
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108194}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!102 &10205684
 TextMesh:
   serializedVersion: 3
@@ -1473,7 +1484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
---- !u!114 &114000010325269660
+--- !u!114 &114000010231241450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1485,20 +1496,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - Mobile/Particles/Alpha Blended
---- !u!114 &114000010576590616
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShaderNames:
-  - KT/Mobile/DiffuseTint
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
 --- !u!114 &114000010726293106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1512,6 +1519,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
+--- !u!114 &114000010785522262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
 --- !u!114 &114000010792344414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1525,25 +1556,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - GUI/KT 3D Text
---- !u!114 &114000011535268728
+--- !u!114 &114000011238792936
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShaderNames:
-  - Mobile/Particles/Alpha Blended
---- !u!114 &114000011744791312
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147686}
+  m_GameObject: {fileID: 136216}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
@@ -1551,12 +1569,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
---- !u!114 &114000012025642760
+--- !u!114 &114000011744791312
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136216}
+  m_GameObject: {fileID: 147686}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
@@ -1577,6 +1595,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - GUI/KT 3D Text
+--- !u!114 &114000012885784410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
+  - Legacy Shaders/Transparent/Diffuse
 --- !u!114 &114000013341363434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1623,22 +1658,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0d3a6828937d55147b1f4a9726321450, type: 2}
   - {fileID: 2100000, guid: 521f0aba687930340a76e1e378294e79, type: 2}
   - {fileID: 2100000, guid: 1d063907afb183848abd3b80aaf1d50c, type: 2}
+  Zilch: {fileID: 2100000, guid: 96d2a053e59ab46498d5dec5b3e6fd9a, type: 2}
   Symbol1: {fileID: 2359390}
   Symbol2: {fileID: 2350004}
   Symbol3: {fileID: 2365056}
---- !u!114 &114000013402078698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShaderNames:
-  - Mobile/Particles/Alpha Blended
 --- !u!114 &114000013432773328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1652,3 +1675,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - GUI/KT 3D Text
+--- !u!114 &114000014217036578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/DiffuseTint
