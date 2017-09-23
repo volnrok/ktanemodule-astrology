@@ -240,6 +240,7 @@ public class AstrologyModule : MonoBehaviour
         KMSelectable btn;
         if (_twitchCommands.TryGetValue(command.Trim().ToLowerInvariant(), out btn))
         {
+            yield return null;
             yield return btn;
             yield return new WaitForSeconds(.1f);
             yield return btn;
@@ -249,6 +250,7 @@ public class AstrologyModule : MonoBehaviour
         var m = Regex.Match(command, @"^(.*)(\d)\s*$");
         if (m.Success && _twitchCommands.TryGetValue(m.Groups[1].Value.Trim().ToLowerInvariant(), out btn))
         {
+            yield return null;
             while (!BombInfo.GetFormattedTime().Contains(m.Groups[2].Value))
                 yield return new WaitForSeconds(.1f);
 
