@@ -267,7 +267,7 @@ public class AstrologyModule : MonoBehaviour
                 yield return "waiting music";
 
             while (!BombInfo.GetFormattedTime().Contains(m.Groups[2].Value))
-                yield return new WaitForSeconds(.1f);
+                yield return null;
 
             yield return btn;
             yield return new WaitForSeconds(.1f);
