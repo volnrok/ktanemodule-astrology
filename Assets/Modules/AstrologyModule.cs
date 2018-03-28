@@ -263,6 +263,9 @@ public class AstrologyModule : MonoBehaviour
         if (m.Success && _twitchCommands.TryGetValue(m.Groups[1].Value.Trim().ToLowerInvariant(), out btn))
         {
             yield return null;
+            if (btn == ButtonNO)
+                yield return "waiting music";
+
             while (!BombInfo.GetFormattedTime().Contains(m.Groups[2].Value))
                 yield return new WaitForSeconds(.1f);
 
