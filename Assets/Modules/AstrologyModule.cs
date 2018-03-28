@@ -217,9 +217,8 @@ public class AstrologyModule : MonoBehaviour
     Dictionary<string, KMSelectable> _twitchCommands = null;
     IEnumerator ProcessTwitchCommand(string command)
     {
-        if (!command.StartsWith("press "))
-            yield break;
-        command = command.Substring(6).ToLowerInvariant();
+        if (command.StartsWith("press ", StringComparison.InvariantCultureIgnoreCase))
+            command = command.Substring(6).ToLowerInvariant();
 
         if (_twitchCommands == null)
             _twitchCommands = new Dictionary<string, KMSelectable>
