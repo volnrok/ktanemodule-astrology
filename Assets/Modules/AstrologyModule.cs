@@ -212,6 +212,8 @@ public class AstrologyModule : MonoBehaviour
         isComplete = true;
     }
 
+    private string TwitchHelpMessage = "Press good on 3 with !{0} press good on 3. Press bad on 2 with !{0} press bad on 2. No Omen is !{0} press no";
+
     Dictionary<string, KMSelectable> _twitchCommands = null;
     IEnumerator ProcessTwitchCommand(string command)
     {
