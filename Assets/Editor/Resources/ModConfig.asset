@@ -13,5 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: spwizAstrology
   title: On the Subject of Astrology
+  description: "[i]Sometimes, the stars have it out for you. Is this\r bomb a good
+    or a poor omen?[/i]\n\n[h1]About[/h1]\nLook up relations between astrological
+    symbols on a table to determine how beneficial or how ominous of an omen is represented.\n\n[h1]Manual[/h1]\nA
+    PDF of the manual is included in the download, you can also download here:\n[url=http://ktane.timwi.de/PDF/Astrology.pdf]Manual
+    PDF[/url]\r\n[url=http://ktane.timwi.de/HTML/Astrology.html]Manual HTML[/url]\n\n[h1]Module
+    ID[/h1]\nspwizAstrology\n\r\nThanks to Timwi for help with the manual formatting."
   version: 0.1.0
   outputFolder: build
+  previewImage: {fileID: 2800000, guid: e91add8dc28c62f43bcd112ea543a981, type: 3}
