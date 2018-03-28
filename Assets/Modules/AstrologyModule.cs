@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AstrologyModule : MonoBehaviour
 {
@@ -199,6 +201,15 @@ public class AstrologyModule : MonoBehaviour
         }
 
         return false;
+    }
+
+    void TwitchHandleForcedSolve()
+    {
+        KMAudio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, this.transform);
+        GetComponent<KMSelectable>().AddInteractionPunch();
+        Debug.LogFormat("[Astrology #{0}] Module forcibly solved.", moduleId);
+        BombModule.HandlePass();
+        isComplete = true;
     }
 
     Dictionary<string, KMSelectable> _twitchCommands = null;
