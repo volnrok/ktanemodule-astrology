@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AstrologyModule : MonoBehaviour
 {
@@ -201,12 +203,22 @@ public class AstrologyModule : MonoBehaviour
         return false;
     }
 
+    void TwitchHandleForcedSolve()
+    {
+        KMAudio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, this.transform);
+        GetComponent<KMSelectable>().AddInteractionPunch();
+        Debug.LogFormat("[Astrology #{0}] Module forcibly solved.", moduleId);
+        BombModule.HandlePass();
+        isComplete = true;
+    }
+
+    private string TwitchHelpMessage = "Press good on 3 with !{0} press good on 3. Press bad on 2 with !{0} press bad on 2. No Omen is !{0} press no";
+
     Dictionary<string, KMSelectable> _twitchCommands = null;
     IEnumerator ProcessTwitchCommand(string command)
     {
-        if (!command.StartsWith("press "))
-            yield break;
-        command = command.Substring(6).ToLowerInvariant();
+        if (command.StartsWith("press ", StringComparison.InvariantCultureIgnoreCase))
+            command = command.Substring(6).ToLowerInvariant();
 
         if (_twitchCommands == null)
             _twitchCommands = new Dictionary<string, KMSelectable>
@@ -251,8 +263,11 @@ public class AstrologyModule : MonoBehaviour
         if (m.Success && _twitchCommands.TryGetValue(m.Groups[1].Value.Trim().ToLowerInvariant(), out btn))
         {
             yield return null;
+            if (btn == ButtonNO)
+                yield return "waiting music";
+
             while (!BombInfo.GetFormattedTime().Contains(m.Groups[2].Value))
-                yield return new WaitForSeconds(.1f);
+                yield return null;
 
             yield return btn;
             yield return new WaitForSeconds(.1f);
